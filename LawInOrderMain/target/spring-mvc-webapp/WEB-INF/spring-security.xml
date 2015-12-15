@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+ http://www.springframework.org/schema/security
+ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+    
+    <beans:bean id="webexpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler"/>
+    
+    <http pattern="/login" security="none" />
+    <http pattern="/home" security="none" />
+    <http pattern="/" security="none" />
+    <http pattern="/css/**" security="none" />
+    <http pattern="/js/**" security="none" />
+    <http pattern="/img/**" security="none" />
+    
+    <http auto-config="true" use-expressions="false">
+        <form-login login-processing-url="/j_spring_security_check"
+                    login-page="/login"
+                    authentication-failure-url="/login?login_error=1"/>
+        <logout logout-success-url="/home" />
+        <!-- HERE IS WHERE YOU PUT WHICH ENDPOINTS ARE RESTRICTED TO WHICH USER ROLES -->
+        <intercept-url pattern="/control" access="ROLE_ADMIN,ROLE_AUTHOR"/>
+    </http>
+
+    
+    <authentication-manager>
+        <authentication-provider>
+            <jdbc-user-service id="userService"
+                               data-source-ref="dataSource"
+                                
+                               users-by-username-query=                               
+ "select username, password, enabled from users where username=?"
+                               authorities-by-username-query=
+ "select username, authority from authorities where username=?" />
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>

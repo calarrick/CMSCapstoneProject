@@ -1,0 +1,385 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2015, 10:36:26 AM
+    Author     : apprentice
+*/
+/* 
+    Created on : Dec 7, 2015, 11:22:18 PM
+    Author     : apprentice
+*/
+
+/*LAYOUT ADJUSTMENTS
+*/
+
+#post-area {
+
+    border-top: #31b0d5 1px solid;
+    
+
+}
+
+@media (max-width: 768px){
+    
+    #post-area{
+        border-top: none;
+    }
+    
+    
+}
+
+nav.affix {
+    border-bottom: #31b0d5 1px solid;
+}
+
+nav.affix-top {
+    position: static;
+    border-bottom: #31b0d5 1px solid;
+}
+
+
+#nav-row {
+    width: 100%;
+    z-index: 20;
+    background-color: white;
+    padding: 5px 25px 5px 25px;
+    
+}
+
+#title {
+    float: left;
+    
+}
+
+#subtitle {
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+#post-area {
+    padding-top: 25px;
+}
+
+#sidebar {
+    padding-top: 40px;
+}
+
+
+/* icons for small-screen interaction */
+
+span.big-icon {
+
+    display: inline-block;
+    font-size: 2.5rem;
+
+
+}
+
+.top-link {
+    display: block;
+    float: left;
+}
+
+.top-item{
+    display: inline-block;
+    
+}
+
+div.gavel {
+    max-width: 65px;
+    display: inline-block;
+    float: left;
+    padding: 25px;
+}
+
+.fa-gavel {
+    
+    font-size: 3.25rem;
+    float:right;
+}
+
+@media (max-width:768px){
+    
+    div.gavel {
+        display: none;
+    }
+    .fa-gavel {
+        display: none;
+    }
+    
+    
+}
+
+#toggler{
+    display: block;
+    float: right;
+}
+
+#post-area {
+
+    clear: both;
+
+
+}
+
+section {
+
+}
+
+.affix {
+    top: 0;
+}
+
+#nav-row {
+    min-height:50px;
+}
+
+#sidebar {
+
+    
+    
+}
+
+/*.sidebar-default {
+    left: auto;
+}
+
+*/
+.sidebar-fixed {
+    position: fixed;
+    top:0;
+
+}
+
+.big-sidebar-hidden{
+    display: none;
+}
+
+.big-sidebar-visible{
+    position: fixed;
+    top:40px;
+    right:40px;
+    z-index:20;
+    background-color:#00004d;
+    color: white;
+    padding:1rem;
+}
+
+section.post {
+    
+    border-bottom: 1px;
+    border-color: #16576a;
+    
+    
+}
+
+#post-area{
+    z-index:10;
+    position: relative;
+
+}
+
+.post-excerpt, .post-body {
+    margin-top: 15px;
+}
+
+ul#post-list, div#post-list {
+    
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+
+.post-excerpt p, .post-body p {
+    
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+/*BACKSTOPS ON POST WIDTH, for comfortable reading line-length*/
+
+
+@media(min-width: 1200px){
+
+    .container{
+        max-width:1066px;
+    }
+    .post {width: 700px;
+           font-size: 1.2em;
+
+
+    }
+
+
+
+}
+
+@media(min-width: 992px){
+
+    .post{
+
+        max-width: 650px;
+        
+
+    }
+
+
+}
+
+@media(min-width: 768px){
+
+    .post{
+        max-width: 600px;
+        
+    }
+
+
+}
+
+
+
+
+/*FONTS AND TYPE
+
+//for post text
+//Merriweather
+//font-family: 'Merriweather', serif;
+
+//for various headers and side
+//open sans in regular and condensed
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+html {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.35;
+
+}
+
+.container {
+    font-family: 'Merriweather', Georgia, Times, serif;
+    font-size: 16px;
+    /* line-height: 1.42857143; */
+    color: #333;
+    background-color: #fff;
+}
+
+.admin-page {
+    font-family: 'Open Sans';
+}
+
+h1, h2#page-title {
+
+    font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, Arial, Sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+
+
+}
+
+h1.post-title, h2.post-title {
+
+    font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, Arial, Sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+
+
+}
+
+/*headings scale down relative to other text
+to avoid awkward heading breaks on very small devices */
+@media(max-width: 360px){
+h2.post-title, h1.post-title {
+    
+    font-size: 2.5rem;
+   
+}
+
+h2 {font-size: 
+        1.5rem;
+}
+        
+h3 {
+    font-size: 1rem;
+    
+}
+
+}
+
+
+h2 {
+    font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#sidebar h4 {
+    font-family: 'Open Sans Condensed', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#sidebar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    
+}
+
+#sidebar ul {
+   
+}
+
+h4 {
+    font-family: 'Merriweather', Times, serif;
+    font-size: 1.12rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Merriweather', Times, serif;
+    font-size:1rem;
+    font-style: italic;
+    
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+    font-style:italic;
+    font-weight:bold;
+}
+
+
+/* COLORS */
+
+.highlight {
+    
+    color: red;
+    
+    
+}
+
+
+
+
+
+/* special cases */
+
+.not-found-url{
+    
+    font-style: italic;
+    font-size: 1.2rem;
+    
+    
+}
