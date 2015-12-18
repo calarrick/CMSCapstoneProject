@@ -9,7 +9,7 @@
         <title>${post.postTitle}: Law in Order</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Open+Sans:600|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-        <link href="css/pagestyle.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/css/pagestyle.css" rel="stylesheet">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
             <div id ="header-div" class="row">
                 <header>
                     <div id="title" class="col-xs-12">
-                        <h2 id="page-title"><a href=${pageContext.request.contextPath}>Law in Order</a></h1>
+                        <h2 id="page-title"><a href="${pageContext.request.contextPath}/">Law in Order</a></h1>
                     </div>
                     <div id="subtitle" class="col-xs-12">
                         <p>Putting the order in law since 2015</p>
@@ -126,9 +126,9 @@
 
 
         <!-- Scripts; ordering is important-->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/layout.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/index.js"></script>
+        <script src="${pageContext.request.contextPath}/js/layout.js"></script>
     </body>
 </html>

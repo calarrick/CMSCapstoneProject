@@ -64,7 +64,7 @@ public class BlogDisplayController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String mainSiteDisplay() {
-        return "index";
+        return "home";
 
     }
 

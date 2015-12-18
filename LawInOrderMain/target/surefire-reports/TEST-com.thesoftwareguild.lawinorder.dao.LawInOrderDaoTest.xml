@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="0" name="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" time="4.113" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" time="4.293" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_66\jre\bin"/>
     <property name="java.vm.version" value="25.66-b18"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Andrew\Dropbox\softwarerepos\capstone\andrewplumblarrick\capstone-project\capstone-project\LawInOrderMain"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Andrew\Projects\LawInOrderMain"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,9 +16,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Andrew\Dropbox\softwarerepos\capstone\andrewplumblarrick\capstone-project\capstone-project\LawInOrderMain"/>
+    <property name="user.dir" value="C:\Users\Andrew\Projects\LawInOrderMain"/>
     <property name="java.runtime.version" value="1.8.0_66-b18"/>
-    <property name="netbeans.deploy" value="true"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
@@ -31,7 +30,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files (x86)\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.3.9\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_66\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Broadcom\WHL\;C:\Program Files\Broadcom\WHL\syswow64;C:\Program Files\Broadcom\WHL\SysWow64\;C:\Program Files\Broadcom\WHL\SysWow64\syswow64;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\Program Files (x86)\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\apache-maven-3.3.9\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_66\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Broadcom\WHL\;C:\Program Files\Broadcom\WHL\syswow64;C:\Program Files\Broadcom\WHL\SysWow64\;C:\Program Files\Broadcom\WHL\SysWow64\syswow64;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\Program Files (x86)\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\apache-maven-3.3.9\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -46,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_66\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true -Dmaven.ext.class.path=C:\Program Files (x86)\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files (x86)\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,18 +62,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testAddUser" time="1.569"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testUpdateTag" time="0.198"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetTagById" time="0.271"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetAllUsers" time="0.213"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetPostByTitle" time="0.205"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testUpdatePost" time="0.163"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testUpdateUser" time="0.148"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetAllTags" time="0.152"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testDeleteTag" time="0.188"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testAddGetDeleteUser" time="0.215"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testDeletePost" time="0.121"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetUserById" time="0.154"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testAddTag" time="0.212"/>
-  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testPendingListMethods" time="0.304"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testAddUser" time="1.638"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testUpdateTag" time="0.259"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetTagById" time="0.288"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetAllUsers" time="0.272"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetPostByTitle" time="0.219"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testUpdatePost" time="0.186"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testUpdateUser" time="0.177"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetAllTags" time="0.185"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testDeleteTag" time="0.196"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testAddGetDeleteUser" time="0.172"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testDeletePost" time="0.18"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testGetUserById" time="0.135"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testAddTag" time="0.132"/>
+  <testcase classname="com.thesoftwareguild.lawinorder.dao.LawInOrderDaoTest" name="testPendingListMethods" time="0.254"/>
 </testsuite>

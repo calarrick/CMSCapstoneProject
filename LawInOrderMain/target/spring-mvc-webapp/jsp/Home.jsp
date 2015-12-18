@@ -8,7 +8,7 @@
         <title>Law in Order</title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Open+Sans:600|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-        <link href="css/pagestyle.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/css/pagestyle.css" rel="stylesheet">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
             <div id ="header-div" class="row">
                 <header>
                     <div id="title" class="col-xs-12">
-                        <h1><a href=${pageContext.request.contextPath}>Law in Order</a></h1>
+                        <h1><a href="${pageContext.request.contextPath}/">Law in Order</a></h1>
                     </div>
                     <div id="subtitle" class="col-xs-12">
                         <p>Putting the order in law since 2015</p>
@@ -68,7 +68,7 @@
                         <li><a href="${pageContext.request.contextPath}/login">Log In</a></li> 
                         <li><a href="${pageContext.request.contextPath}/control">Control Panel</a></li> 
                         <li><a href="${pageContext.request.contextPath}/">Go to Home Page</a></li>
-                        <li><a href="#">About the Author</a></li>
+                        
                         <li><a href="#">Archives</a></li>
 
                     </ul>
@@ -87,10 +87,10 @@
 
 
         <!-- Scripts; ordering is important-->
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/layout.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/index.js"></script>
+        <script src="${pageContext.request.contextPath}/js/layout.js"></script>
     </body>
 </html>
 

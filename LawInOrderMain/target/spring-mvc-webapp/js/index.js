@@ -7,7 +7,7 @@
 //****************ON PAGE LOAD********************
 
 
-if (location.pathname === "/LawInOrder/") {
+//if (location.pathname === "/LawInOrder/") {
     $.ajax({
         url: "posts"
     }).success(function (data, status) {
@@ -15,7 +15,7 @@ if (location.pathname === "/LawInOrder/") {
         loadPosts(data, status);
 
     });
-}
+//}
 //
 //else if (location.pathname.match("LawInOrder") !== null){
 //    

@@ -15,17 +15,6 @@ callForAuthorsSingle();
 $('#add-post').toggle(true);
 $('#update-post').toggle(false);
 
-//variables
-
-author;
-prevPostId;
-newPostType;
-prevPostDate;
-sendDate;
-newPostType;
-prevPostType;
-userId;
-
 
 //WYSIWIG editor configuration
 tinymce.init({
@@ -60,6 +49,50 @@ tinymce.init({
 });
 
 
+//author, postType, and Date closures in lieu of global variables
+//simple closure to act as getter/setter for storing a user/author associated with post being manipulated
+//var authorSet = (function () {
+//    var storedAuthor;
+//    return {
+//        getAuthor: function () {
+//            return storedAuthor;
+//        },
+//        setAuthor: function (author) {
+//            storedAuthor = author;
+//            return storedAuthor;
+//        }
+//    };
+//});
+
+//for storing prior post types if they are changed in edit-post process
+//var prevPostTyper = (function () {
+//
+//    var prevPostType;
+//    return {
+//        getPrevPostType: function () {
+//            return prevPostType;
+//        },
+//        setPrevPostType: function (postType) {
+//            prevPostType = postType;
+//            return prevPostType;
+//        }
+//    };
+//});
+
+//tracker to transfer post dates while editing/changing
+//var postDateTracker = (function () {
+//
+//    var date;
+//    return {
+//        getPrevPostDate: function () {
+//            return date;
+//        },
+//        setPrevPostDate: function (prevDate) {
+//            date = prevDate;
+//            return date;
+//        }
+//    };
+//});
 
 
 //pull-down selector of available authors, populates the text-entry box when moved
@@ -425,7 +458,19 @@ function callForPosts() {
 
         loadSidebarPosts(data, status);
     });
-
+//
+//    $.ajax({
+//        url: "posts/author"
+//    }).success(function (data, status) {
+//        loadSidebarPostsAuthor(data, status);
+//    });
+//
+//    $.ajax({
+//        url: "posts"
+//    }).success(function (data, status) {
+//        loadSidebarPublishedPosts(data, status);
+//        //loadSidebarPosts(data, status);
+//    });
 }
 
 
@@ -531,7 +576,15 @@ function loadSidebarPages(listPages, page) {
 
 function loadPostToEdit(postId) {
 
-   
+    //switches UI to "edit" mode and repopulates fields with target post/page data
+
+    //authGet = authorSet();
+//    var postId;
+//    var userId;
+    //initialType = postType;
+    //prevChecker = prevPostTyper();
+    //var prevPostType = prevChecker.getPrevPostType();
+    
 
     changeHeadingsToEditingMode();
 
@@ -546,7 +599,7 @@ function loadPostToEdit(postId) {
                 .success(function (post) {
 
                     userId = post.userId;
-                    
+                    //authGet.setAuthor(post.author);
                     author = post.author;
 
                     alertUserToExistingData(post, author);
@@ -555,7 +608,8 @@ function loadPostToEdit(postId) {
                     $('#existing-post-id').text(post.postId);
                     $('#author-opts').val(post.author);
                     $('#author').val(post.author);
-                    
+                    //var prevPostT = prevChecker.setPrevPostType(postType);
+                    //$('#post-type').val(prevChecker.getPrevPostType());
                     $('#post-title').val(post.postTitle);
                     $('#prev-pub-status').val(post.pubStatus);
                     $('#tags').val(post.tags);

@@ -21,7 +21,7 @@
             <div id ="header-div" class="row">
                 <header>
                     <div id="title" class="col-xs-12">
-                        <h1 id="page-title"><a href=${pageContext.request.contextPath}>Law in Order</a></h1>
+                        <h1 id="page-title"><a href="${pageContext.request.contextPath}/">Law in Order</a></h1>
                     </div>
                     <div id="subtitle" class="col-xs-12">
                         <p>Putting the order in law since 2015</p>
